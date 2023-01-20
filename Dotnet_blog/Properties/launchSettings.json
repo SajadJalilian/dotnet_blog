@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "dotnet_blog": {
+    "Dotnet_blog": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
