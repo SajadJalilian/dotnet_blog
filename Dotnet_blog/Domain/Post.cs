@@ -7,10 +7,10 @@ namespace Dotnet_blog.domain;
 
 public sealed class Post : BaseEntity
 {
-    public string Title { get; set; }
-    public string Content { get; set; }
+    public string Title { get; set; } = null!;
+    public string Content { get; set; } = null!;
 
     // Navigation
-    public User Author { get; set; }
-    public IEnumerable<Category> Categories { get; set; }
+    public User Author { get; set; } = null!;
+    public IEnumerable<Category> Categories { get; set; } = null!;
 }

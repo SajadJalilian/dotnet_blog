@@ -1,17 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Dotnet_blog.domain;
 
 public sealed class Comment : BaseEntity
 {
-    public string Name { get; set; }
-    public string Content { get; set; }
-    public string Email { get; set; }
+    public string Name { get; set; } = null!;
+    public string Content { get; set; } = null!;
+    public string Email { get; set; } = null!;
 
     // Navigation
-    public Post Post { get; set; }
-    public Comment Parent { get; set; }
+    public Post Post { get; set; } = null!;
+    public Comment Parent { get; set; } = null!;
 }
